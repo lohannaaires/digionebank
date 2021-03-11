@@ -1,13 +1,13 @@
 package br.com.lohanna.digionebank
 
+import br.com.lohanna.digionebank.teste.testaModificadoresDeVisibilidade
 import br.com.lohanna.digionebank.teste.testaProperties
 
 fun main() {
-    val lohanna = Pessoa(nome = "Lohanna", cpf = "111.111.111-11")
+    val digiOneBank = Banco(nome = "DigiOne", numero = 12)
+    val copiaBanco = digiOneBank.copy(numero = 7)
 
-    println("${lohanna.infoPessoa()} \n")
+    println("${copiaBanco.infoBanco()} \n")
+    println(digiOneBank.infoBanco())
 
-    lohanna.alteraTelefone("(99)99999-9999")
-
-    println(lohanna.infoPessoa())
 }
