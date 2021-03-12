@@ -1,9 +1,5 @@
 package br.com.lohanna.digionebank
 
-import br.com.lohanna.digionebank.teste.testaBancoDataClass
-import br.com.lohanna.digionebank.teste.testaModificadoresDeVisibilidade
-import br.com.lohanna.digionebank.teste.testaProperties
-
 fun main() {
 
     ClienteTipo.values().forEach { tipoCliente ->
