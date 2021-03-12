@@ -1,21 +1,30 @@
 package br.com.lohanna.digionebank
 
+import br.com.lohanna.digionebank.teste.testaTipoCliente
+
 fun main() {
 
-    ClienteTipo.values().forEach { tipoCliente ->
-        println("${tipoCliente.name} (${tipoCliente.descricao})")
-    }
+    val lohanna = Pessoa(
+        nome = "Lohanna",
+        cpf = "111.111.111-11"
+    )
 
-    ClienteTipo.values().forEach {
-        println("${it.name} (${it.descricao})")
-    }
-
-    val pf = ClienteTipo.PF
-    val pj = ClienteTipo.PJ
+    val israel = Funcionario(
+        nome = "Israel",
+        cpf = "222.222.222-22",
+        salario = "5000.00".toBigDecimal()
+    )
 
     println("""
-        >> ${pf.name} (${pf.descricao})
-        >> ${pj.name} (${pj.descricao})
+        Nome: ${lohanna.nome}
+        CPF: ${lohanna.cpf}
+        
+    """.trimIndent())
+
+    println("""
+        Nome: ${israel.nome}
+        CPF: ${israel.cpf}
+        Salário: ${israel.salario}
     """.trimIndent())
 
 }
