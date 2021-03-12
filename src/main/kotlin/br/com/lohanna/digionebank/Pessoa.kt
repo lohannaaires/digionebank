@@ -1,6 +1,6 @@
 package br.com.lohanna.digionebank
 
-open class Pessoa(
+abstract class Pessoa(
     val nome: String,
     val cpf: String
 )
